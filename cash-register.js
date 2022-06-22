@@ -9,6 +9,7 @@ function checkCashRegister(price, cash, cid) {
 // convert the contents of cid into key, value pairs
   let cashInDrawer = {};
 
+// the amount of money in dollar is converted into cents and passed in as value  
   cid.forEach(item => {
     cashInDrawer[item[0]] = Math.round(item[1] * 100);
   })
